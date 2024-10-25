@@ -6,16 +6,21 @@
   flex-direction: column;
   height: 100vh;
   background-color: #0d1b3f;
+  padding: 20px;
+  text-align: center; /* Center text */
+  position: relative; /* For potential absolute positioning of elements */
 }
 
+/* Heading with gradient and shadow */
 .heading {
-    margin: 0;
-    font-family: "Roboto Condensed", sans-serif;
-    font-size: 5rem;
-    background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+  margin: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 5rem;
+  background: linear-gradient(40deg, #ea00ff, #ea00ff, #03d5ff, #03d5ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.5));
+  animation: fadeIn 1s ease-in-out; /* Fade-in effect */
 }
 
 /* Question mark shake animation */
@@ -28,7 +33,12 @@
   0%, 100% { transform: translateX(0); }
   25% { transform: translateX(-2px); }
   50% { transform: translateX(2px); }
-  75% { transform: translateX(-2px); }
+}
+
+/* Fade-in animation for heading */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 .start-button {
@@ -40,12 +50,35 @@
   border-radius: 8px;
   cursor: pointer;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  position: relative; /* For pseudo-elements */
 }
 
 .start-button:hover {
   background-color: #392d6b;
   transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.5); /* Deeper shadow on hover */
+}
+
+/* Add a subtle ripple effect on click */
+.start-button:active::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  animation: ripple 0.6s linear forwards;
+}
+
+@keyframes ripple {
+  to {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
 }
 
 .canvas-container {
@@ -62,6 +95,11 @@
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  transition: transform 0.2s ease; /* Add transition */
+}
+
+.color-picker:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 .canvas {
@@ -69,4 +107,9 @@
   background-color: white; /* White canvas */
   border-radius: 8px;
   box-shadow: 0px 8px 15px rgba(255, 255, 255, 0.15);
+  transition: box-shadow 0.3s ease; /* Transition for shadow */
+}
+
+.canvas:hover {
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
 }
