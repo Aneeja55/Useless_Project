@@ -65,18 +65,6 @@ function DrawingCanvas() {
         </button>
       ) : (
         <div className="canvas-container">
-          <input type="color" ref={colorPickerRef} defaultValue="#000000" className="color-picker" />
-          <label className="brush-size-label"> {/* Corrected classname */}
-            Brush Size:
-            <input 
-              type="range"
-              min="1"
-              max="50"
-              value={brushSize}
-              onChange={(e) => setBrushSize(e.target.value)}
-              className="brush-size-slider"
-            />
-          </label>
           <canvas
             ref={canvasRef}
             width="700"
@@ -87,6 +75,20 @@ function DrawingCanvas() {
             onMouseOut={() => setIsDrawing(false)}
             className="canvas"
           />
+          <div className="controls">
+            <input type="color" ref={colorPickerRef} defaultValue="#000000" className="color-picker" />
+            <label className="brush-size-label"> {/* Corrected classname */}
+              Brush Size:
+              <input 
+                type="range"
+                min="1"
+                max="50"
+                value={brushSize}
+                onChange={(e) => setBrushSize(e.target.value)}
+                className="brush-size-slider"
+              />
+            </label>
+          </div>
         </div>
       )}
     </div>

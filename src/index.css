@@ -11,7 +11,11 @@ canvas {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
   }
-  
+  .titlename{
+    align-items: center;
+    text-align: center;
+
+  }
  
   .drawing-app h1 {
     color: #333;
@@ -28,9 +32,11 @@ canvas {
   }
 
   .brush-size-label {
-  margin: 10px 0;
-  font-size: 16px;
-  color: #333;
+    align-items: center;
+    display:flex;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #333;
 }
 
 .brush-size-slider {
