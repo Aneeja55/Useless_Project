@@ -91,6 +91,7 @@ function DrawingCanvas() {
         </button>
       ) : (
         <div className="canvas-container">
+<<<<<<< HEAD
           <input type="color" ref={colorPickerRef} defaultValue="#000000" className="color-picker" />
           <label className="brush-size-label">
             Brush Size:
@@ -103,6 +104,8 @@ function DrawingCanvas() {
               className="brush-size-slider"
             />
           </label>
+=======
+>>>>>>> 0bc815b0981352a3b0288b8a066900a8e540f89f
           <canvas
             ref={canvasRef}
             width="700"
@@ -113,6 +116,7 @@ function DrawingCanvas() {
             onMouseOut={() => setIsDrawing(false)}
             className="canvas"
           />
+<<<<<<< HEAD
           <div className="button-container">
             <button onClick={saveCanvasToLocal} className="save-local-button">Save Canvas</button>
             <button onClick={loadRandomCanvas} className="load-random-button">Load Random Canvas</button>
@@ -123,6 +127,21 @@ function DrawingCanvas() {
               placeholder="Enter canvas name"
               className="canvas-name-input"
             />
+=======
+          <div className="controls">
+            <input type="color" ref={colorPickerRef} defaultValue="#000000" className="color-picker" />
+            <label className="brush-size-label"> {/* Corrected classname */}
+              Brush Size:
+              <input 
+                type="range"
+                min="1"
+                max="50"
+                value={brushSize}
+                onChange={(e) => setBrushSize(e.target.value)}
+                className="brush-size-slider"
+              />
+            </label>
+>>>>>>> 0bc815b0981352a3b0288b8a066900a8e540f89f
           </div>
         </div>
       )}
