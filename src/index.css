@@ -24,6 +24,8 @@ canvas {
   }
   
   .color-picker {
+    position: relative;
+    left: 30px;
     margin-bottom: 10px;
     padding: 8px;
     border-radius: 4px;
@@ -32,7 +34,8 @@ canvas {
   }
 
   .brush-size-label {
-    align-items: center;
+    position: relative;
+    right: 30px;
     display:flex;
     margin: 10px 0;
     font-size: 16px;
@@ -40,6 +43,7 @@ canvas {
 }
 
 .brush-size-slider {
+  align-items: right;
   margin-left: 10px;
 }
 
