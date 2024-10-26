@@ -13,8 +13,8 @@
 - Member 3: Aneeja J - SSET
 
 ### Project Description
-The project is basically a platform that allow people to draw in random canvases which keep getting swapped at random time with other canvases in realtime 
-It's completely built using react native.
+The project is basically a platform that allow people to draw in random canvases which keep getting swapped at random time interval with other canvases in realtime 
+It's completely built using react native. This feature allows us to connect with the public for no use. We can even draw untill we get back our canvas. this platform is just for killing time.
 ### The Problem (that doesn't exist)
 What if people want to see someone else's artwork and wish to contribute something of their own in that?
 
@@ -25,71 +25,13 @@ whenever we start drawing the canvas will change rapidly within a random time ra
 ### Technologies/Components Used
 For Software:
 - React
-- [Frameworks used]
-- [Libraries used]
-- [Tools used]
-
-For Hardware:
-- [List main components]
-- [List specifications]
-- [List tools required]
-
-### Implementation
-For Software:
-# Installation
-[commands]
-
-# Run
-[commands]
-
-### Project Documentation
-For Software:
 
 # Screenshots (Add at least 3)
-![Screenshot1](Add screenshot 1 here with proper name)
-*Add caption explaining what this shows*
+![image](https://github.com/user-attachments/assets/b44588af-118a-448f-99d4-fca4dd613985)
+This is the front page with a start button
 
-![Screenshot2](Add screenshot 2 here with proper name)
-*Add caption explaining what this shows*
-
-![Screenshot3](Add screenshot 3 here with proper name)
-*Add caption explaining what this shows*
-
-# Diagrams
-![Workflow](Add your workflow/architecture diagram here)
-*Add caption explaining your workflow*
-
-For Hardware:
-
-# Schematic & Circuit
-![Circuit](Add your circuit diagram here)
-*Add caption explaining connections*
-
-![Schematic](Add your schematic diagram here)
-*Add caption explaining the schematic*
-
-# Build Photos
-![Components](Add photo of your components here)
-*List out all components shown*
-
-![Build](Add photos of build process here)
-*Explain the build steps*
-
-![Final](Add photo of final product here)
-*Explain the final build*
-
-### Project Demo
-# Video
-[Add your demo video link here]
-*Explain what the video demonstrates*
-
-# Additional Demos
-[Add any extra demo materials/links]
-
-## Team Contributions
-- [Name 1]: [Specific contributions]
-- [Name 2]: [Specific contributions]
-- [Name 3]: [Specific contributions]
+![image](https://github.com/user-attachments/assets/0fe319f3-6c33-450b-be03-39bf0bb2a7d6)
+on clicking the start button the canvas appears where we can draw upto our wish according to the colour we pick and size of the brush. The canvas gets swapped automatically. 
 
 ---
 Made with ❤️ at TinkerHub Useless Projects 
